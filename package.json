@@ -9,7 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "JSONStream": "^1.2.1",
     "axios": "^0.15.1",
-    "firebase": "^3.5.0"
+    "event-stream": "^3.3.4",
+    "firebase": "^3.5.0",
+    "lodash": "^4.17.2"
   }
 }
