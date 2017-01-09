@@ -3,7 +3,7 @@ var _ = require('lodash');
 var fs = require('fs');
 
 jsdom.env({
-    file: './data/search-3.htm',
+    file: '../data/cks.html',
     done: function (err, window) {
         global.window = window;
         global.document = window.document;
@@ -22,7 +22,7 @@ function scrape() {
     var naIds = _.compact(mapped);
     var naIdJSON = naIds.map(id => ( { naId: id }));
 
-    var outputFilename = 'nara-tw-college-park-web-3.json';
+    var outputFilename = 'nara-cks.json';
         
     fs.writeFile(outputFilename, JSON.stringify(naIdJSON), function(err) {
         if(err) {

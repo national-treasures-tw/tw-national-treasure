@@ -1,0 +1,109 @@
+<!doctype html>
+<!--[if IE 8 ]>    <html class="ie8" xmlns="http://www.w3.org/1999/html" lang="en" id="ng-app" ng-app="opaApp"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie9" xmlns="http://www.w3.org/1999/html" lang="en" id="ng-app" ng-app="opaApp"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html xmlns="http://www.w3.org/1999/html" lang="en" id="ng-app" ng-app="opaApp"> <!--<![endif]-->
+<head>
+  <script type="text/javascript">
+    document.write("<base href='" + document.location.protocol + "//" + document.location.host + "' />");
+  </script>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <!--<meta charset="UTF-8">-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title ng-bind="title || 'The National Archives Catalog'"></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="initial-scale=1,width=device-width">
+
+  <link rel="shortcut icon" href="/favicon.ico"/>
+  <link rel="apple-touch-icon" href="images/nara.png" />
+
+  <link rel="stylesheet" href="styles/9dc1693e.vendor.css"/>
+  <link rel="stylesheet" href="styles/0c43e879.main.css"/>
+
+  <!-- Javascript -->
+  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!--[if lt IE 9]>
+  <link rel="stylesheet" href="styles/0569bf6d.ie8.css"/>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script src="scripts/3b40df82.html5shiv.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+  <script type='text/javascript' src="scripts/assets/e759f50a.respond.js"></script>
+  <![endif]-->
+  <!-- Javascript -->
+  <script>
+    var addthis_share =
+    {
+      url: window.location.href,
+      title: 'The National Archives Catalog'
+    };
+    var addthis_config = {};
+
+  </script>
+  <script src="scripts/assets/6201281d.modernizr.custom.47375.js"></script>
+  <script type="text/javascript" id="_fed_an_js_tag"
+          src="scripts/assets/digitalgov/federated-analytics.all.min.js?agency=NARA"></script>
+</head>
+<body>
+<div spinner></div>
+<div id="wrap" class="col-xs-12 noPaddingSides height100">
+  <div data-header></div>
+  <div id="menuBar" menu-header class="col-xs-12 noPaddingSides collapse" ng-if="!$root.isHome"></div>
+  <div data-searchbar ng-if="$root.showSearchBar"></div>
+  <div id="contentOPA" ng-view="" class="col-xs-12 noPaddingSides" ng-class="{contentOPAHome: $root.isHome}" tabindex="0"></div>
+</div>
+<!--[if lt IE 9]>
+<script src="scripts/21ef3912.ltie9.js"></script>
+<![endif]-->
+
+<script src="scripts/31e8e3d2.vendor.js"></script>
+<script src="apiLocation.js"></script>
+<script src="scripts/ed4a71ff.config.js"></script>
+<script src="scripts/589d471d.scripts.js"></script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#domready=1&async=0"></script>
+<script>
+  if (/(iPad|iPhone|iPod)/g.test(navigator.userAgent)) {
+    $('<link rel="stylesheet" type="text/css" href="styles/54838370.ios.css" />').appendTo("head");
+  }
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-79277885-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript">
+  // Instructions: please embed this snippet directly into every page in your website template.
+  // For optimal performance, this must be embedded directly into the template, not referenced
+  // as an external file.
+
+  // Answers Cloud Services Embed Script v1.02
+  // DO NOT MODIFY BELOW THIS LINE *****************************************
+  ;(function (g) {
+    var d = document, i, am = d.createElement('script'), h = d.head || d.getElementsByTagName("head")[0],
+      aex = {
+        "src": "//gateway.answerscloud.com/archives-gov/production/gateway.min.js",
+        "type": "text/javascript",
+        "async": "true",
+        "data-vendor": "acs",
+        "data-role": "gateway"
+      };
+    for (var attr in aex) { am.setAttribute(attr,aex[attr]); }
+    h.appendChild(am);
+    g['acsReady'] = function () {var aT = '__acsReady__', args = Array.prototype.slice.call(arguments, 0),k = setInterval(function () {if (typeof g[aT] === 'function') {clearInterval(k);for (i = 0; i < args.length; i++) {g[aT].call(g, function(fn) { return function() { setTimeout(fn, 1) };}(args[i]));}}}, 50);};
+  })(window);
+  // DO NOT MODIFY ABOVE THIS LINE *****************************************
+</script>
+<script type="text/javascript">
+  setTimeout(function(){var a=document.createElement("script");
+    var b=document.getElementsByTagName("script")[0];
+    a.src=document.location.protocol+"//script.crazyegg.com/pages/scripts/0034/3988.js?"+Math.floor(new Date().getTime()/3600000);
+    a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+</body>
+</html>
